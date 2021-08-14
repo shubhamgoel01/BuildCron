@@ -332,6 +332,8 @@ class ChecklistView(APIView):
     def post(self, request):
         data = request.data
         if (data.get('Action') == "Bulk"):
+            #user input
+            #user_input = data.get('input')
             with open(os.path.join(settings.BASE_DIR, 'media/Checklist.csv')) as csv_file:
                 data = csv.reader(csv_file)
                 for row in data:
