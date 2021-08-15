@@ -158,6 +158,36 @@ class Login(APIView):
         else:
             return Response({'message': 'No Such email exists'}, status=status.HTTP_400_BAD_REQUEST)
 
+class EmployeePostView(APIView):
+    permission_classes = (permissions.AllowAny,)
+
+    def getEmployees(self):
+        pass
+
+    def postEmployee(self):
+        pass
+
+    def updateEmployee(self):
+        pass
+
+    def deleteEmployee(self):
+        pass
+
+class ProjectsPostView(APIView):
+    permission_classes = (permissions.AllowAny,)
+
+    def getProjects(self):
+        pass
+
+    def postProjects(self):
+        pass
+
+    def updateProjects(self):
+        pass
+
+    def deleteProjects(self):
+        pass
+
 class QuestionPostView(APIView):
     permission_classes = (permissions.AllowAny,)
 

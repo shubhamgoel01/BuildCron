@@ -17,6 +17,9 @@ urlpatterns = [
     path('post_questions/', QuestionPostView.as_view(), name="Post Questions"),
     path('post_images/', PostImagesView.as_view(), name="Post Multiple Images"),
 
+    path('post_employees/', EmployeePostView.as_view(), name="Post Employee"),
+    path('post_projects/', ProjectsPostView.as_view(), name="Post Projects"),
+
     path('login/', Login.as_view(), name="user login"),
     path('licenses/', LicensesView.as_view(), name="user Licenses"),
     #path('logout/', Logout.as_view(), name="user logout"),
